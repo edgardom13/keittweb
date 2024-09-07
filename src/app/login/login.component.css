@@ -1,0 +1,14 @@
+section{
+    margin: 0;
+    padding: 0;
+    background-image: url('/dist/img/mangos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+@media only screen and (max-width: 800px) {
+    section {
+        background: transparent !important;
+    }
+  }

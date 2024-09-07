@@ -1,0 +1,32 @@
+.btn-get-started{
+    background-color: rgb(57 169 0);
+}
+.btn-get-started:hover{
+    background-color: rgb(57 169 0);
+}
+
+.fuerte{
+    color:#39a900 !important;
+    font-weight: bold;
+    font-size: 30px;    
+}
+
+.brand{
+    font-size: 30px;
+}
+.pp{
+    font-weight: bold;
+    font-size: 25px;
+}
+.img-fluid{
+    border-radius: 50%;
+}
+.boto{
+    background-color: #39a900 !important;
+}
+.bi{
+    color: #fff !important;
+}
+.btn-read-more{
+    background-color: #39a900 !important;
+}

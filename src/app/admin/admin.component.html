@@ -1,0 +1,227 @@
+<div class="wrapper">
+
+    <!-- Preloader -->
+    
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <div class="custom-control custom-switch theme-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1" [(ngModel)]="switchTheme" (change)="changeTheme()">
+            <label class="custom-control-label" for="customSwitch1">Claro/Oscuro</label>
+
+          </div>
+        </li>
+        <li  class="nav-item">
+          <form action="#">
+            <div class="input-group">
+            <input type="search" class="form-control form-control" placeholder="Buscar">
+            <div class="input-group-append">
+            <button type="submit" class="btn btn btn-default">
+            <i class="fa fa-search"></i>
+            </button>
+            </div>
+            </div>
+            </form>
+        </li>
+
+        <!-- <li class="dropdown user user-menu nav-item" style="top: 7px;">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+          <span class="hidden-xs"><b>Admin</b></span>
+          </a>
+          <ul class="dropdown-menu">
+          
+            <li class="user-header">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <p>
+                  Alexander Pierce - Web Developer
+                <small>Member since Nov. 2012</small>
+                </p>
+            </li>
+            
+            <li class="user-body">
+              <div class="row">
+                <div class="col-xs-4 text-center">
+                  <a href="#">Followers</a>
+                </div>
+                <div class="col-xs-4 text-center">
+                  <a href="#">Sales</a>
+                </div>
+                <div class="col-xs-4 text-center">
+                  <a href="#">Friends</a>
+                </div>
+              </div>            
+            </li>
+          
+            <li class="user-footer">
+              <div class="pull-left">
+                <a href="#" class="btn btn-default btn-flat">Profile</a>
+              </div>
+              <div class="pull-right">
+                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+              </div>
+            </li>
+          </ul>
+        </li> -->
+
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-light-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img id="foto" src="dist/img/icono.png" alt="foto" class="brand-image "/>
+        <span class="brand-text font-weight-light"><b class="fuerte">Keitt</b><b style="color: yellow;font-weight: bold;">Web</b></span>
+        <span class="brand-text font-weight-light"><b class="sub">Guia metodologica</b></span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <nav class="mt-2" id="sidebar">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a [routerLink]="['/admin/home']" routerLinkActive="active" class="nav-link">
+                <i class="nav-icon fa fa-home"></i>
+                  <p>
+                    Inicio
+                  </p>
+              </a>
+            </li>    
+            <li class="nav-item">
+              <a [routerLink]="['/admin/introduccion']" routerLinkActive="active" class="nav-link">
+                <i class="nav-icon fa fa-book"></i>
+                  <p>
+                    Introduccion
+                  </p>
+              </a>
+            </li>    
+            <li class="nav-item">
+              <a [routerLink]="['/admin/information']" routerLinkActive="active" class="nav-link">
+                <i class="nav-icon fa fa-file-text"></i>
+                <p>
+                  Información
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/admin/analisis-suelo']"  routerLinkActive="active" class="nav-link">
+                <i class="nav-icon fa fa-bar-chart"></i>
+                <p>
+                  Análisis de suelo
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/admin/siembra']"   routerLinkActive="active" class="nav-link">
+                <i class="nav-icon fa fa-pagelines"></i>
+                <p>
+                  Siembra
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/admin/seguimiento']" class="nav-link">
+                <i class="nav-icon fa fa-list-ul"></i>
+                <p>
+                  Seguimiento
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-leaf"></i>
+                <p>
+                  Análisis foliar
+                </p>
+              </a>
+            </li>
+            <hr>
+            <li class="nav-header">Paginas</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-road"></i>
+                <p>
+                  Cosecha
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-trophy"></i>
+                <p>
+                  Resultado
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-tree"></i>
+                <p>
+                  Post-cosecha
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-table"></i>
+                <p>
+                  Tabla
+                </p>
+              </a>
+            </li>
+            <hr>
+            <li class="nav-header">Otros</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-cog"></i>
+                <p>
+                  Ajustes
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="logout()">
+                  <i class="nav-icon fa fa-sign-in"></i>
+                    <p> Salir </p>         
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+        <router-outlet></router-outlet>
+      </section>
+      <!-- /.content -->
+    </div>
+
+    <footer class="main-footer float">
+      <strong>Copyright &copy; 2024 <a href="#">SenaMango</a>.</strong>
+      <div class="float-right d-none d-sm-inline-block">
+      </div>
+    </footer>
+  </div>

@@ -1,0 +1,292 @@
+  <header id="header" class="header d-flex align-items-center fixed-top container-fluid">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <a href="index.html" class="brand">
+          <img id="foto" src="dist/img/mango3.png" alt="foto" class="brand-image "/>
+          <span class="brand-text font-weight"><b class="fuerte">Sena</b><b>Mango</b></span>
+        </a>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#about">Acerca de </a></li>
+          <li><a href="#pricing">precio</a></li>
+          <li><a href="#testimonio">Testimonio</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a [routerLink]="['/login']">Iniciar sesión</a></li>
+          <li><a class="btn" href="">Registrate</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 >Transforma tu Cultivo de
+              Mango con Nuestra Guía
+              Interactiva</h1>
+            <p >Descubre cómo la agricultura de precisión puede aumentar tu producción,
+              optimizar recursos y mejorar la calidad de tus mangos. ¡Empieza hoy y lleva
+              tu cultivo al siguiente nivel!</p>
+            <div class="d-flex flex-column flex-md-row"  >
+              <a [routerLink]="['/login']" class="btn-get-started">¡Empieza ya!<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" >
+            <img src="dist/img/foto.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <section id="stats" class="stats section">
+
+      <div class="container" >
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <img id="foto" src="dist/img/usuariologo.png" alt="foto" width="100" height="100" class="brand-image "/>
+              <div>
+                <p class="pp">90 +</p>
+                <p class="pp">Usuarios</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <img id="foto" src="dist/img/mangologo.png" alt="foto"  width="100" height="100" class="brand-image "/>
+              <div>
+                <p class="pp">+ 2</p>
+                <p class="pp">Variedades de mango </p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <img id="foto" src="dist/img/siembra.png" alt="foto"  width="100" height="100" class="brand-image "/>
+              <div>
+                <p class="pp">+ 3</p>
+                <p class="pp">Tipos de siembra</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->    
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" >
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex align-items-center"  >
+            <img src="dist/img/foto2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center"  >
+            <div class="content">
+              
+              <h2>Maximiza tu Cosecha de Mango
+                con Agricultura de Precisión</h2>
+              <p>
+                Conoce las herramientas adecuadas para cada etapa de tu cultivo
+              </p>
+              <p>
+                🟢 Herramientas de análisis de datos para predecir rendimientos y planificar cosechas.
+              </p>
+              <p>
+                🟢 Escoge un tipo de mercado y conoce las herramientas que se adecuan a tu cultivo
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center" >
+                  <span >Saber más</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>        
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+
+   <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+      <!-- Section Title -->
+      <div class="container section-title" >
+        <div class="container py-5">
+          <div class="text-center pricing-header">
+              <h1 class="display-4">Empieza Hoy: Obtén tu Guía
+                Interactiva</h1>
+              <p class="lead">Accede a todos nuestros recursos de forma gratuita.</p>
+          </div>
+  
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center py-5 justify-content-center">
+              <!-- Basic Plan -->
+              <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                      <div class="card-header py-3">
+                        <h1 class="card-title pricing-card-title fuerte" >Plan cultivos de mango</h1>
+                      </div>
+                      <div class="card-body">                          
+                          <ul class="list-unstyled mt-3 mb-4">
+                              <li>✅ Análisis ilimitados</li>
+                              <li>✅ Información actualizada</li>
+                              <li>✅ Recomendaciones personalizadas</li>
+                              
+                          </ul>
+                          <button type="button" class="w-100 btn btn-lg btn-get-started" style="color: #fff;">¡Empieza ya!</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div><!-- End Section Title -->
+
+    </section><!-- /Pricing Section -->
+
+        <!-- Values Section -->
+        <section id="testimonio" class="values section" style="margin-top:-250px;">
+
+          <!-- Section Title -->
+          <div class="container section-title" >
+            <p>Testimonios<br></p>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-4" >
+                <div class="card">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid" alt="">
+                  <h3>Viezh Robert</h3>
+                  <p>4.5 ⭐</p>
+                  <p>Es una página muy buena, rápida y eficiente</p>
+                </div>
+              </div><!-- End Card Item -->
+
+              <div class="col-lg-4" >
+                <div class="card">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid" alt="">
+                  <h3>Yessica Christy</h3>
+                  <p>4.5 ⭐</p>
+                  <p>Al principiooo no sabia como cultivar mango,
+                    ahora tampoco pero se ve bonita la página</p>
+                </div>
+              </div><!-- End Card Item -->
+
+              <div class="col-lg-4" >
+                <div class="card">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="img-fluid" alt="">
+                  <h3>Joe Doe</h3>
+                  <p>4.5 ⭐</p>
+                  <p>Wow, es increíble, muy interactiva y
+                    profesional</p>
+                </div>
+              </div><!-- End Card Item -->
+    
+             
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /Values Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>¡Subscríbete para empezar hoy mismo!</h4>
+            <p>El conocimiento ahora está en tus manos, ¡ Inicia ya !</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input style="background-color: #39a900;" type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="brand">
+            <img id="foto" src="dist/img/mango3.png" alt="foto" width="100" height="100" class="brand-image "/>
+            <span class="brand-text font-weight"><b class="fuerte">Sena</b><b>Mango</b></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>SenaMango es una web interactiva....</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Contactanos</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Sitio Web</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Beneficios</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Dónde nos encontramos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Sé nuestro aliado</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Donaciones</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Siguenos</h4>
+          <div class="social-links d-flex">
+            <a class="boto" href=""><i class="bi bi-twitter-x"></i></a>
+            <a class="boto" href=""><i class="bi bi-facebook"></i></a>
+            <a class="boto" href=""><i class="bi bi-instagram"></i></a>
+            <a class="boto" href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SenaMango</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

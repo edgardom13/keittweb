@@ -1,0 +1,60 @@
+.mt-2 ul :hover{
+    background-color:#39a900 ;
+    border-radius: 5px ;
+}
+li :hover{
+    background-color: transparent;
+}
+.nav-link.active {
+    background-color:#39a900 !important;
+}
+.input-group .form-control {
+    border-top-left-radius: 20px;  /* Redondea la esquina superior izquierda */
+    border-bottom-left-radius: 20px;  /* Redondea la esquina inferior izquierda */
+}
+
+.input-group-append .btn {
+    border-top-right-radius: 20px;  /* Redondea la esquina superior derecha */
+    border-bottom-right-radius: 20px;  /* Redondea la esquina inferior derecha */
+    margin-left: -1px;  /* Elimina el espacio entre el input y el botón */
+}
+.custom-control {
+    top: 7px;
+    right: 40px;
+}
+@media (max-width: 768px) {
+    .custom-control {
+        display: none;
+    }
+}
+.fuerte{
+    color:#39a900;
+    font-weight: bold;
+    font-size: 20px;    
+}
+.boton{
+    border: transparent;
+    background-color: transparent;
+}
+.nav-item{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.dropdown-menu {
+    position: absolute;
+    left: -180%; 
+    top: 41px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; 
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; 
+}
+.sub{
+    font-size: 9px;
+}
