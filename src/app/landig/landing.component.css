@@ -30,3 +30,38 @@
 .btn-read-more{
     background-color: #39a900 !important;
 }
+
+.sub {
+    display: block;
+    font-size: 0.6rem; /* Ajusta el tamaño de letra si lo prefieres */
+    margin-top: 36px;   /* Espacio entre "Keitt Web" y "Guía metodológica" */
+    color: #666666;    /* Cambia el color si es necesario */
+    margin-left: -110px;
+}
+.brand-link{
+    background-color: transparent !important;
+    height: 65px;
+}
+.lead{
+    font-size: 20px;
+}
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace que el ícono esté dentro de un círculo */
+    background-color: #f0f0f0; /* Color de fondo del círculo */
+    text-align: center;
+    line-height: 50px; /* Alinea verticalmente el ícono */
+    transition: background-color 0.3s;
+  }
+  
+  .social-icon i {
+    color: green; /* Color verde para los iconos */
+    font-size: 24px; /* Tamaño del icono */
+  }
+  
+  .social-icon:hover {
+    background-color: #e0e0e0; /* Cambio de color del círculo al pasar el mouse */
+  }
+      

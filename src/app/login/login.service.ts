@@ -14,7 +14,7 @@ export class LoginService {
 
   login(username: string, password: string): Observable<any> {
     return this.http.post<any>(`${this.apiUrl}/login/`, { username, password }, ).pipe(
-      tap(response => {
+      tap(response => { 
         if (response.token) {
           localStorage.setItem('token', response.token);
         }

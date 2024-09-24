@@ -9,12 +9,14 @@
     object-fit: cover;
   }
 
-  .btn{
+  .btnj{
     background-color: #39a900;
     margin: 0 auto;
     color: #fff;
     width: 50%;
     height: 40px;
+    border-radius: 5px;
+    border: none;
   }
   .regis{
     margin: 0 auto;
@@ -22,3 +24,9 @@
   h5{
     font-weight: bold;
   }
+  .titulo{
+    text-align: center;
+  }
+  p{
+    text-align: justify;
+}

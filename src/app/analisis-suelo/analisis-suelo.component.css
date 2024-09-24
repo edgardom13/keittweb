@@ -3,7 +3,20 @@
     width: 50%;
     height: 40px;
   }
+
+  .btnj{
+    margin: 0 auto;
+    width: 20%;
+    height: 40px;
+  }
 .foto{
     width: 200px;
     height: 200px;
+}
+.custom-modal-content {
+  background-color: white !important; /* Asegura que el fondo siempre sea blanco */
+  color: #000; /* Opcional: establece el color del texto en negro */
+}
+p{
+  text-align: justify;
 }

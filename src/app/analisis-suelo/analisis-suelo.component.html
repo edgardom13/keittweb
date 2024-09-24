@@ -1,9 +1,7 @@
 <section class="content">
     <div class="container-fluid">
-
-        
     <div class="row">
-        <h1 class="titulo">Suelo y nitrientes </h1>
+        <h1 class="titulo">Suelo y nutrientes </h1>
         <div class="col-md-12 col-lg-4 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <div class="card-body">
                 <h2>Suelo</h2>
@@ -13,7 +11,7 @@
                     estos tipos  de suelos son ideales para el cultivo de mango debido a su balance entre retención de agua y nutrientes, y sus capacidades de drenaje.
                     
                 </p>
-                <a href="#" class="btn" style="background-color: #39a900; color: #fff;">Has tu Analisis</a>
+                <a href="#" class="btn" style="background-color: #39a900; color: #fff;" data-toggle="modal" data-target="#myModal">Has tu Análisis</a>
 
                     <div  class="justify-content-center my-5 centrar">
                         <h4>Recomendaciones</h4>
@@ -135,8 +133,235 @@
         </div>
         
         </div>
-
-
-
-
 </section>
+
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-header">
+        <h5 class="titulo" id="myModalLabel">Análisis de cultivo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="N_NH4">N-NH4</label>
+                    <input type="text" id="N_NH4" formControlName="nh4" class="form-control" placeholder="N-NH4">
+                  </div>
+                  <div class="mb-3">
+                    <label for="N_NO3">N-NO3</label>
+                    <input type="text" id="N_NO3" formControlName="nh3" class="form-control" placeholder="N-NO3">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Potasio">Potasio</label>
+                    <input type="text" id="Potasio" formControlName="potassium" class="form-control" placeholder="Potasio">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Calcio">Calcio</label>
+                    <input type="text" id="Calcio" formControlName="calcium" class="form-control" placeholder="Calcio">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Magnesio">Magnesio</label>
+                    <input type="text" id="Magnesio" formControlName="magnesium" class="form-control" placeholder="Magnesio">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Sodio">Sodio</label>
+                    <input type="text" id="Sodio" formControlName="sodium" class="form-control" placeholder="Sodio">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Fosforo">Fósforo</label>
+                    <input type="text" id="Fosforo" formControlName="phosphorus" class="form-control" placeholder="Fósforo">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="Azufre">Azufre</label>
+                    <input type="text" id="Azufre" formControlName="sulfur" class="form-control" placeholder="Azufre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Hierro">Hierro</label>
+                    <input type="text" id="Hierro" formControlName="iron" class="form-control" placeholder="Hierro">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Manganeso">Manganeso</label>
+                    <input type="text" id="Manganeso" formControlName="manganese" class="form-control" placeholder="Manganeso">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Cobre">Cobre</label>
+                    <input type="text" id="Cobre" formControlName="copper" class="form-control" placeholder="Cobre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Zinc">Zinc</label>
+                    <input type="text" id="Zinc" formControlName="zinc" class="form-control" placeholder="Zinc">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Boro">Boro</label>
+                    <input type="text" id="Boro" formControlName="boron" class="form-control" placeholder="Boro">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="ph">pH</label>
+                    <input type="text" id="ph" formControlName="ph" class="form-control" placeholder="pH">
+                  </div>
+                  <!-- <div class="mb-3">
+                    <label for="Conductividad">Conductividad</label>
+                    <input type="text" id="Conductividad" formControlName="Conductividad" class="form-control" placeholder="Conductividad">
+                  </div> -->
+                  <br><br>
+                  <div class="mb-3">
+                    <label for="Arena">Arena</label>
+                    <input type="text" id="Arena" formControlName="sand" class="form-control" placeholder="Arena">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Limo">Limo</label>
+                    <input type="text" id="Limo" formControlName="silt" class="form-control" placeholder="Limo">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Arcilla">Arcilla</label>
+                    <input type="text" id="Arcilla" formControlName="clay" class="form-control" placeholder="Arcilla">
+                  </div>
+                  <div class="mb-3">
+                    <label for="aluminum">aluminum</label>
+                    <input type="text" id="aluminum" formControlName="aluminum" class="form-control" placeholder="aluminum">
+                  </div>
+                  <div class="mb-3">
+                    <label for="profundidad_cm">Profundidad</label>
+                    <input type="text" id="profundidad_cm" formControlName="profundidad_cm" class="form-control" placeholder="profundidad cm">
+                  </div>
+                  <div class="mb-3">
+                    <label for="densidad_aparente">Densidad aparente</label>
+                    <input type="text" id="densidad_aparente" formControlName="densidad_aparente" class="form-control" placeholder="densidad aparente">
+                  </div>
+                </div>
+              </div>
+            </div>              
+            <div class="modal-footer">
+              <button type="submit" class="btn btnj"  data-toggle="modal" data-target="#myModal2" [disabled]="!dataForm.valid"  style="background-color: #39a900; color: #fff;">Realizar análisis</button>
+              <button type="button" class="btn btnj" style="background-color: #333; color: #fff;" data-dismiss="modal" >Cerrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- ------------------------------------------------------------------------------- -->
+
+
+<div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-header"> 
+        <h5 class="titulo" id="myModalLabel">Resultado de análisis de cultivo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="N_NH4">N-NH4</label>
+                  <p id="N_NH4">{{ dataForm.value.nh4 }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="N_NO3">N-NO3</label>
+                  <p id="N_NO3">{{ dataForm.value.nh3 }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Potasio">Potasio</label>
+                  <p id="Potasio">{{ dataForm.value.potassium }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Calcio">Calcio</label>
+                  <p id="Calcio">{{ dataForm.value.calcium }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Magnesio">Magnesio</label>
+                  <p id="Magnesio">{{ dataForm.value.magnesium }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Sodio">Sodio</label>
+                  <p id="Sodio">{{ dataForm.value.sodium }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Fosforo">Fósforo</label>
+                  <p id="Fosforo">{{ dataForm.value.phosphorus }}</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="Azufre">Azufre</label>
+                  <p id="Azufre">{{ dataForm.value.sulfur }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Hierro">Hierro</label>
+                  <p id="Hierro">{{ dataForm.value.iron }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Manganeso">Manganeso</label>
+                  <p id="Manganeso">{{ dataForm.value.manganese }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Cobre">Cobre</label>
+                  <p id="Cobre">{{ dataForm.value.copper }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Zinc">Zinc</label>
+                  <p id="Zinc">{{ dataForm.value.zinc }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Boro">Boro</label>
+                  <p id="Boro">{{ dataForm.value.boron }}</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="ph">pH</label>
+                  <p id="ph">{{ dataForm.value.ph }}</p>
+                </div>
+                <br><br>
+                <div class="mb-3">
+                  <label for="Arena">Arena</label>
+                  <p id="Arena">{{ dataForm.value.sand }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Limo">Limo</label>
+                  <p id="Limo">{{ dataForm.value.silt }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="Arcilla">Arcilla</label>
+                  <p id="Arcilla">{{ dataForm.value.clay }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="aluminum">Aluminio</label>
+                  <p id="aluminum">{{ dataForm.value.aluminum }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="profundidad_cm">Profundidad</label>
+                  <p id="profundidad_cm">{{ dataForm.value.profundidad_cm }}</p>
+                </div>
+                <div class="mb-3">
+                  <label for="densidad_aparente">Densidad aparente</label>
+                  <p id="densidad_aparente">{{ dataForm.value.densidad_aparente }}</p>
+                </div>
+              </div>
+            </div>
+          </div>              
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

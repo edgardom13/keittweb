@@ -1,0 +1,264 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="card w-50">
+              <div class="card-header text-center">
+                <h4>Crea tu cultivo</h4>
+              </div>
+              <div class="card-body">
+                <form >
+                  <!-- Nombre -->
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre"  name="nombre" placeholder="Nombre" required>
+                  </div>
+          
+                  <!-- Número de Hectárea -->
+                  <div class="mb-3">
+                    <label for="hectarea" class="form-label">Número de Hectárea</label>
+                    <input type="number" class="form-control" id="hectarea" name="hectarea" placeholder="Hectárea" required>
+                  </div>
+          
+                  <!-- Variedad -->
+                  <div class="mb-3">
+                    <label for="variedad" class="form-label">Tipo de Siembra</label>
+                    <select class="form-select" id="variedad"  name="variedad" required>
+                      <option value="">Seleccione</option>
+                      <option value="keitt">Keitt</option>
+                    </select>
+                  </div>
+          
+                  <!-- Tipo de Siembra -->
+                  <div class="mb-3">
+                    <label for="tipoSiembra" class="form-label">Tipo de Siembra</label>
+                    <select class="form-select" id="tipoSiembra"  name="tipoSiembra" required>
+                      <option value="">Seleccione</option>
+                      <option value="Directa">Directa</option>
+                      <option value="Trasplante">Trasplante</option>
+                    </select>
+                  </div>
+          
+                  <!-- Tipo de Mercado -->
+                  <div class="mb-3">
+                    <label for="tipoMercado" class="form-label">Tipo de Mercado</label>
+                    <select class="form-select" id="tipoMercado" name="tipoMercado" required>
+                      <option value="">Seleccione</option>
+                      <option value="Local">Local</option>
+                      <option value="Nacional">Nacional</option>
+                      <option value="Internacional">Internacional</option>
+                    </select>
+                  </div>
+          
+                  <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <div class="col">
+        <h2 class="my-5">Recomendaciones</h2>
+        <p class="">
+            Para el cultivo de mango Keitt en un área mínima de 2 hectáreas, se recomienda usar el sistema de riego por goteo para un control eficiente del agua y la fertilización, asegurando el desarrollo óptimo de las raíces. Se sugiere el método de siembra rectangular, con una distancia entre árboles de 8 x 10 metros, permitiendo plantar entre 200 y 250 árboles en total. Este sistema facilita el manejo del cultivo, la poda, y la cosecha, asegurando una producción de calidad. Además, es esencial realizar un monitoreo constante de plagas y ajustar la fertilización según el análisis del suelo para garantizar altos rendimientos.
+        </p>
+        <h2>Herramientas recomendadas</h2>
+        <div class="card ">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-sm"><img src="dist/img/img18.png" alt="" width="150" height="100" data-bs-toggle="modal" data-bs-target="#exampleModal"></div>
+                    <div class="col-sm"><img src="dist/img/img19.png" alt="" width="150" height="100" data-bs-toggle="modal" data-bs-target="#exampleModal1"></div>
+                    <div class="col-sm"><img src="dist/img/img20.png" alt="" width="150" height="100" data-bs-toggle="modal" data-bs-target="#exampleModal2"></div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm"><img src="dist/img/img21.png" alt="" width="150" height="100" data-bs-toggle="modal" data-bs-target="#exampleModal3"></div>
+                    <div class="col-sm"><img src="dist/img/img22.png" alt="" width="150" height="100" data-bs-toggle="modal" data-bs-target="#exampleModal4"></div>
+                    <div class="col-sm"><img src="dist/img/img23.png" alt="" width="150" height="100" data-bs-toggle="modal" data-bs-target="#exampleModal5"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">CROPWAT</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2 class="">¿Cómo usar CROPWAT?</h2>
+            <p class="">
+                CROPWAT es una herramienta de apoyo a la toma de decisiones desarrollada por la División de Desarrollo de Tierras y Aguas de la FAO.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+                <iframe width="720" height="405" 
+                  src="https://www.youtube.com/embed/PwrJ4jaJJ8o" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">CLIMWAT</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2 class="">¿Cómo usar CLIMWAT?</h2>
+            <p class="">
+               ...
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+                <iframe width="720" height="405" 
+                  src="https://www.youtube.com/watch?v=8Pzis_JjZMs" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PLUVIOMETRO</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2 class="">¿Cómo usar PLUVIOMETRO?</h2>
+            <p class="">
+               ...
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+                <iframe width="720" height="405" 
+                  src="https://www.youtube.com/watch?v=64LqN_SaMY0" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SENSOR DE HUMEDAD</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2 class="">¿Cómo usar SENSOR DE HUMEDAD?</h2>
+            <p class="">
+               ...
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+                <iframe width="720" height="405" 
+                  src="https://www.youtube.com/watch?v=RT12SLPU7ow" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">DRON</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2 class="">¿Cómo usar DRON?</h2>
+            <p class="">
+               ...
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+                <iframe width="720" height="405" 
+                  src="https://www.youtube.com/watch?v=hHiPsPw2E-8" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">RIEGO POR INTERNET</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2 class="">¿Cómo usar RIEGO POR INTERNET?</h2>
+            <p class="">
+                Control remoto eficiente del riego a través de plataformas en línea,
+                Automatización del riego desde cualquier lugar con acceso a Internet,
+                Gestión inteligente del riego con monitoreo y ajustes en tiempo real.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+                <iframe width="720" height="405" 
+                  src="https://www.youtube.com/watch?v=y9Tf8tANzXE" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

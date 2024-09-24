@@ -30,7 +30,7 @@ li :hover{
 .fuerte{
     color:#39a900;
     font-weight: bold;
-    font-size: 20px;    
+    font-size: 25px;    
 }
 .boton{
     border: transparent;
@@ -47,14 +47,31 @@ a{
     left: -180%; 
     top: 41px;
 }
-
 .navbar-nav .nav-item {
     margin-right: 20px; 
 }
-
 .navbar-nav .nav-item:last-child {
     margin-right: 0; 
 }
-.sub{
-    font-size: 9px;
+.sub {
+    display: block;
+    font-size: 0.6rem; /* Ajusta el tamaño de letra si lo prefieres */
+    margin-top: -6px;   /* Espacio entre "Keitt Web" y "Guía metodológica" */
+    color: #666666;    /* Cambia el color si es necesario */
+    margin-left: 60px;
 }
+.brand-link{
+    background-color: transparent !important;
+    height: 65px;
+}
+.nav-item.disabled .nav-link {
+    pointer-events: none; /* Deshabilita clics */
+    cursor: not-allowed;  /* Cambia el cursor */
+    color: #6c757d;       /* Cambia el color a gris o un color que denote que está deshabilitado */
+    background-color: transparent;
+  }
+  
+  .nav-item.disabled .nav-link:hover {
+    background-color: transparent; /* Evita que cambie el fondo en hover */
+    color: #6c757d; /* Mantiene el color deshabilitado en hover */
+  }
