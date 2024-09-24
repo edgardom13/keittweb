@@ -4,3 +4,7 @@ p{
 img{
     cursor: pointer;
 }
+.btn{
+    background-color: #39a900;
+    border: none;
+}
