@@ -260,108 +260,50 @@
 
 <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
-    <div class="modal-content custom-modal-content">
-      <div class="modal-header"> 
-        <h5 class="titulo" id="myModalLabel">Resultado de análisis de cultivo</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="mb-3">
-                  <label for="N_NH4">N-NH4</label>
-                  <p id="N_NH4">{{ dataForm.value.nh4 }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="N_NO3">N-NO3</label>
-                  <p id="N_NO3">{{ dataForm.value.nh3 }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Potasio">Potasio</label>
-                  <p id="Potasio">{{ dataForm.value.potassium }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Calcio">Calcio</label>
-                  <p id="Calcio">{{ dataForm.value.calcium }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Magnesio">Magnesio</label>
-                  <p id="Magnesio">{{ dataForm.value.magnesium }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Sodio">Sodio</label>
-                  <p id="Sodio">{{ dataForm.value.sodium }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Fosforo">Fósforo</label>
-                  <p id="Fosforo">{{ dataForm.value.phosphorus }}</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="mb-3">
-                  <label for="Azufre">Azufre</label>
-                  <p id="Azufre">{{ dataForm.value.sulfur }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Hierro">Hierro</label>
-                  <p id="Hierro">{{ dataForm.value.iron }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Manganeso">Manganeso</label>
-                  <p id="Manganeso">{{ dataForm.value.manganese }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Cobre">Cobre</label>
-                  <p id="Cobre">{{ dataForm.value.copper }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Zinc">Zinc</label>
-                  <p id="Zinc">{{ dataForm.value.zinc }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Boro">Boro</label>
-                  <p id="Boro">{{ dataForm.value.boron }}</p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="mb-3">
-                  <label for="ph">pH</label>
-                  <p id="ph">{{ dataForm.value.ph }}</p>
-                </div>
-                <br><br>
-                <div class="mb-3">
-                  <label for="Arena">Arena</label>
-                  <p id="Arena">{{ dataForm.value.sand }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Limo">Limo</label>
-                  <p id="Limo">{{ dataForm.value.silt }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="Arcilla">Arcilla</label>
-                  <p id="Arcilla">{{ dataForm.value.clay }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="aluminum">Aluminio</label>
-                  <p id="aluminum">{{ dataForm.value.aluminum }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="profundidad_cm">Profundidad</label>
-                  <p id="profundidad_cm">{{ dataForm.value.profundidad_cm }}</p>
-                </div>
-                <div class="mb-3">
-                  <label for="densidad_aparente">Densidad aparente</label>
-                  <p id="densidad_aparente">{{ dataForm.value.densidad_aparente }}</p>
+    <div class="container my-5">
+      <div class="card shadow-lg">
+        <div class="card-header">
+          <h5 class="titulo">Resultado de Análisis de Cultivo</h5>
+        </div>
+        <div class="card-body">
+          <div *ngIf="responseData.comparacion_nutrientes">
+            <div *ngFor="let nutriente of ['Fósforo', 'Azufre', 'Calcio', 'Cobre', 'Hierro', 'Magnesio', 'Manganeso', 'Potasio', 'Zinc', 'pH']" class="mb-4">
+              <div class="card border-success mb-3">
+                <div class="card-body">
+                  <h5>{{ nutriente }}</h5>
+                  <p><strong>Valor del análisis:</strong> {{ responseData.comparacion_nutrientes[nutriente]?.valor_analisis }}</p>
+                  <p><strong>Valor mínimo:</strong> {{ responseData.comparacion_nutrientes[nutriente]?.valor_minimo }}</p>
+                  <p><strong>Valor máximo:</strong> {{ responseData.comparacion_nutrientes[nutriente]?.valor_maximo }}</p>
+                  <div *ngIf="responseData.comparacion_nutrientes[nutriente]">
+                    <p *ngIf="responseData.comparacion_nutrientes[nutriente].valor_analisis < responseData.comparacion_nutrientes[nutriente].valor_minimo" class="text-warning">
+                      Estado: Bajo - Recomendación: Aumentar niveles de {{ nutriente }}.
+                    </p>
+                    <p *ngIf="responseData.comparacion_nutrientes[nutriente].valor_analisis > responseData.comparacion_nutrientes[nutriente].valor_maximo" class="text-danger">
+                      Estado: Alto - Recomendación: Reducir niveles de {{ nutriente }}.
+                    </p>
+                    <p *ngIf="responseData.comparacion_nutrientes[nutriente].valor_analisis >= responseData.comparacion_nutrientes[nutriente].valor_minimo && responseData.comparacion_nutrientes[nutriente].valor_analisis <= responseData.comparacion_nutrientes[nutriente].valor_maximo" class="text-success">
+                      Estado: Óptimo - Recomendación: Los niveles de {{ nutriente }} son adecuados.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>              
+            <!-- Textura del Suelo -->
+            <div class="mt-4">
+              <div class="card border-info">
+                <div class="card-body">
+                  <h5>Textura del Suelo</h5>
+                  <p>{{ responseData2.soil_texture }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btnj" style="background-color: #333; color: #fff;" data-dismiss="modal" >Cerrar</button>
         </div>
       </div>
-    </div>
+    </div>    
   </div>
 </div>
+

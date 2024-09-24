@@ -2,11 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { AnalisisSueloService } from './analisis-suelo.component.service';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-analisis-suelo',
   standalone: true,
-  imports: [ReactiveFormsModule, FormsModule],
+  imports: [ReactiveFormsModule, FormsModule,
+    CommonModule],
   templateUrl: './analisis-suelo.component.html',
   styleUrl: './analisis-suelo.component.css'
 })
@@ -41,12 +44,15 @@ export class AnalisisSueloComponent {
       profundidad_cm : ['', Validators.required],
     });
   }
-
+  responseData: any = {};
+  responseData2: any;
   onSubmit() {
     if (this.dataForm.valid) {
         this.analisisSueloservice.agregarDatos(this.dataForm.value).subscribe(
         response => {
-          console.log('Datos enviados:', response);
+          this.responseData = response;
+          this.responseData2 = response;
+          console.log(this.responseData.comparacion_nutrientes);
         },
         error => {
           console.error('Error al enviar los datos:', error);
