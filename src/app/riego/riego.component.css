@@ -1,3 +1,15 @@
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Reemplaza con el peso deseado, como 400, 700, etc. */
+    font-style: normal;
+}
+.text-primary {
+    font-family: "Work Sans", sans-serif;
+    text-transform: capitalize;
+    font-size: 33px;
+    color: #39a900 !important;
+}
 p{
     text-align: justify;
 }

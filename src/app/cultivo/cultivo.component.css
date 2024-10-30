@@ -1,3 +1,12 @@
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Reemplaza con el peso deseado, como 400, 700, etc. */
+    font-style: normal;
+}
+.text-secundary{
+    color: #39a900 !important;
+  }
 p{
     text-align: justify;
 }
@@ -5,6 +14,6 @@ img{
     cursor: pointer;
 }
 .btn{
-    background-color: #39a900;
-    border: none;
+    color: white;
+    background:#39a900;
 }

@@ -1,22 +1,49 @@
-.btn{
-    margin: 0 auto;
-    width: 50%;
-    height: 40px;
-  }
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Reemplaza con el peso deseado, como 400, 700, etc. */
+  font-style: normal;
+}
 
-  .btnj{
-    margin: 0 auto;
-    width: 20%;
-    height: 40px;
-  }
-.foto{
-    width: 200px;
-    height: 200px;
+.text-primary {
+  font-family: "Work Sans", sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 33px;
+  color: #39a900 !important;
+}
+.title {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+.title2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+.btn {
+  margin: 0 auto;
+  width: 50%;
+  height: 40px;
+}
+
+.btnj {
+  margin: 0 auto;
+  width: 20%;
+  height: 40px;
+}
+.foto {
+  width: 200px;
+  height: 200px;
 }
 .custom-modal-content {
   background-color: white !important; /* Asegura que el fondo siempre sea blanco */
   color: #000; /* Opcional: establece el color del texto en negro */
 }
-p{
+p {
   text-align: justify;
+}
+.col img {
+  border-radius: 5px;
 }

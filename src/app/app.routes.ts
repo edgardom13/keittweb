@@ -10,6 +10,7 @@ import { AnalisisSueloComponent } from './analisis-suelo/analisis-suelo.componen
 import { SiembraComponent } from './siembra/siembra.component';
 import { RiegoComponent } from './riego/riego.component';
 import { CultivoComponent } from './cultivo/cultivo.component';
+import { PlagasComponent } from './plagas/plagas.component';
 
 
 export const routes: Routes = [
@@ -33,8 +34,9 @@ export const routes: Routes = [
             { path: 'introduccion', title: 'Introduccion', component: IntroduccionComponent },
             { path: 'analisis-suelo', title: 'Analisis-suelo', component: AnalisisSueloComponent },
             { path: 'siembra', title: 'Siembra', component: SiembraComponent },
-             { path: 'cultivo', title: 'Cultivo', component: CultivoComponent },
+            { path: 'cultivo', title: 'Cultivo', component: CultivoComponent },
             { path: 'riego', title: 'Riego', component: RiegoComponent },
+            { path: 'plagas', title: 'Plgas', component: PlagasComponent },
         ]
     }
 ];

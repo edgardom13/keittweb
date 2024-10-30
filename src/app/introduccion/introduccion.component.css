@@ -1,20 +1,52 @@
-.fuerte{
-    color:#39a900;
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Reemplaza con el peso deseado, como 400, 700, etc. */
+    font-style: normal;
+  }
+  .container {
+    align-items: center;
+    align-content: center;
+  }
+  .fuerte {
+    color: #39a900 !important;
     font-weight: bold;
-    font-size: 40px;    
-}
-p{
+    font-size: 40px;
+  }
+  
+  .text-web {
+    color: #ffc00b !important;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .text-primary {
+    font-family: "Work Sans", sans-serif;
+    text-transform: capitalize;
+    font-size: 33px;
+    color: #555555 !important;
+  }
+  
+  .text-center{
+    margin: auto;
+    text-align: center;
+  }
+  h1 {
+    font-family: "Work Sans", sans-serif;
+    color: #000;
+  }
+  p {
     font-size: 25px;
-}
-.bg1{
+  }
+  .bg1 {
     background-color: #e6e5fd;
-}
-.bg2{
+  }
+  .bg2 {
     background-color: #fef3d5;
-}
-.bg3{
+  }
+  .bg3 {
     background-color: #d8f7e8;
-}
-p{
+  }
+  p {
     text-align: justify;
-}
+  }
+  
