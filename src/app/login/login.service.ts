@@ -13,7 +13,11 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   login(username: string, password: string): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}/login/`, { username, password }, ).pipe(
+    const token = this.getToken();  
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+    return this.http.post<any>(`${this.apiUrl}/login/`, { username, password }, { headers }).pipe(
       tap(response => { 
         if (response.token) {
           localStorage.setItem('token', response.token);
