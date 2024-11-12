@@ -18,7 +18,7 @@ export class AnalisisSueloComponent {
 
   constructor(private fb: FormBuilder, 
     private http: HttpClient,
-  private analisisSueloservice : AnalisisSueloService) {}
+    private analisisSueloservice : AnalisisSueloService) {}
 
   ngOnInit() {
     this.dataForm = this.fb.group({

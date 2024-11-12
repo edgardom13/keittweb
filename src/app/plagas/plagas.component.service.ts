@@ -7,7 +7,7 @@ import { LoginService } from '../login/login.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AnalisisSueloService {
+export class PlagasComponentService {
     private apiUrl = 'https://guia-mango.onrender.com'; 
     
   constructor(private http: HttpClient,
@@ -15,7 +15,7 @@ export class AnalisisSueloService {
   ) { }
 
 
-  agregarDatos(data: any): Observable<any> {
+  agregarImagen(data: any): Observable<any> {
     const token = this.loginService.getToken();  
     console.log(token)
     const headers = new HttpHeaders({
@@ -24,7 +24,7 @@ export class AnalisisSueloService {
 
     console.log(data);
 
-    return this.http.post<any>(`${this.apiUrl}/analisis-suelo/analisis-suelo/`, data,
+    return this.http.post<any>(`${this.apiUrl}/aquicomplemento/`, data,
       { headers }).pipe(
       tap(
         (resp) => resp
