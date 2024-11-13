@@ -128,7 +128,7 @@
 <section>
     <h1 class="text-primary">Detección de plagas con I.A</h1>
     <div class="container">
-      <form (ngSubmit)="analizarImagen()">
+      <form>
         <div class="input-group">
           <span class="input-group-text">
             <i class="fas fa-camera"></i>
@@ -140,7 +140,7 @@
             (change)="onFileSelected($event)" 
             accept="image/*" 
             aria-label="Subir archivo">
-          <button type="submit" class="btn btn-primary" [disabled]="!archivoValido">
+          <button type="button" class="btn btn-primary" (click)="analizarImagen()" [disabled]="!archivoValido">
             Analizar
           </button>
         </div>

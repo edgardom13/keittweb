@@ -24,7 +24,7 @@ export class PlagasComponentService {
 
     console.log(data);
 
-    return this.http.post<any>(`${this.apiUrl}/aquicomplemento/`, data,
+    return this.http.post<any>(`${this.apiUrl}/plagas/plagas/predict/`, data,
       { headers }).pipe(
       tap(
         (resp) => resp

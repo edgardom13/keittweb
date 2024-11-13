@@ -60,3 +60,6 @@
 .arriba{
     margin-top: -90px;
 }
+#modal1 .modal-dialog {
+  max-width: 40%; /* Ajusta el valor según el ancho deseado */
+}
