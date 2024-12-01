@@ -11,6 +11,7 @@ import { SiembraComponent } from './siembra/siembra.component';
 import { RiegoComponent } from './riego/riego.component';
 import { CultivoComponent } from './cultivo/cultivo.component';
 import { PlagasComponent } from './plagas/plagas.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 export const routes: Routes = [
@@ -23,6 +24,16 @@ export const routes: Routes = [
         path: 'login',
         title: 'Login',
         component: LoginComponent
+    },
+    {
+        path: 'registro',
+        title: 'Registro',
+        component: RegistroComponent
+    },
+    {
+        path: 'analisis',
+        title: 'Registro',
+        component: AnalisisSueloComponent
     },
     {
         path: 'admin',

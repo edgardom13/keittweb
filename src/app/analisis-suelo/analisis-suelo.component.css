@@ -30,20 +30,184 @@
 
 .btnj {
   margin: 0 auto;
-  width: 20%;
+  width: 40%;
   height: 40px;
 }
+
 .foto {
   width: 200px;
   height: 200px;
 }
+/* Modal Content */
 .custom-modal-content {
-  background-color: white !important; /* Asegura que el fondo siempre sea blanco */
-  color: #000; /* Opcional: establece el color del texto en negro */
+  background-color: #f8f9fa; /* Fondo gris claro para el modal */
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
-p {
-  text-align: justify;
+
+/* Modal */
+.custom-modal .modal-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%; 
+  max-width: 900px; 
+  margin: 0 auto;
+  padding: 30px;
 }
+
+/* Estilos del input */
+.custom-input {
+  font-size: 14px;
+  height: 36px;
+  border-radius: 4px;
+  padding: 0 10px; 
+  width: 100%;
+  margin-bottom: 10px; 
+  background-color: #f1f1f1; /* Fondo gris para los inputs */
+  border: 1px solid #ddd; /* Borde gris claro */
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el enfoque */
+}
+
+/* Placeholder de los inputs en cursiva */
+.custom-input::placeholder {
+  color: #a0a0a0;
+  font-style: italic; /* Hace que el placeholder esté en cursiva */
+}
+
+/* Efecto al hacer focus en el input */
+.custom-input:focus {
+  border-color: #39a900; /* Borde verde al hacer focus */
+  box-shadow: 0 0 5px rgba(57, 169, 0, 0.3); /* Sombra verde para un efecto más notorio */
+}
+
+/* Estilos de los botones en el footer del modal */
+.modal-footer .btn {
+  border-radius: 20px;
+  padding: 8px 20px;
+  width: 40%;
+  background-color: #39a900;
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-footer .btn:hover {
+  opacity: 0.8;
+}
+
+/* Contenedor de imagen */
 .col img {
   border-radius: 5px;
+}
+
+/* Contenedores flexibles de los inputs */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Ajuste para columnas */
+.col-3 {
+  flex: 0 0 23%; /* Cuatro columnas */
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .col-3 {
+    flex: 0 0 48%; /* Dos columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .col-3 {
+    flex: 0 0 100%; /* Una columna en pantallas pequeñas */
+  }
+}
+
+/* Estilo general para las tarjetas */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animación al pasar el mouse */
+}
+
+/* Hover para un efecto elegante */
+.card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Asegurar el espacio uniforme entre columnas */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Mínimo 250px por tarjeta */
+  gap: 1rem; /* Espaciado entre tarjetas */
+  margin: 1rem 0; /* Margen superior e inferior */
+}
+
+/* Ajustes de texto dentro de las tarjetas */
+.card-body h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.text-warning {
+  color: #ff9800;
+}
+
+.text-danger {
+  color: #f44336;
+}
+
+.text-success {
+  color: #4caf50;
+}
+
+/* Estilo base para el botón */
+.close-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 0.5rem 1.5rem; /* Espaciado interno */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición */
+}
+
+/* Efecto hover */
+.close-btn:hover {
+  background-color: #555; /* Cambia a un tono más claro */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Efecto active */
+.close-btn:active {
+  background-color: #111; /* Más oscuro al hacer clic */
+  transform: scale(0.95); /* Reduce ligeramente el tamaño */
 }

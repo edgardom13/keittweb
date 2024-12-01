@@ -197,216 +197,214 @@
           <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
             <div class="container">
               <div class="row">
-                <div class="col">
-                  <div class="mb-3">
-                    <label for="N_NH4">N-NH4</label>
-                    <input
-                      type="text"
-                      id="N_NH4"
-                      formControlName="nh4"
-                      class="form-control"
-                      placeholder="N-NH4"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="N_NO3">N-NO3</label>
-                    <input
-                      type="text"
-                      id="N_NO3"
-                      formControlName="nh3"
-                      class="form-control"
-                      placeholder="N-NO3"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Potasio">Potasio</label>
-                    <input
-                      type="text"
-                      id="Potasio"
-                      formControlName="potassium"
-                      class="form-control"
-                      placeholder="Potasio"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Calcio">Calcio</label>
-                    <input
-                      type="text"
-                      id="Calcio"
-                      formControlName="calcium"
-                      class="form-control"
-                      placeholder="Calcio"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Magnesio">Magnesio</label>
-                    <input
-                      type="text"
-                      id="Magnesio"
-                      formControlName="magnesium"
-                      class="form-control"
-                      placeholder="Magnesio"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Sodio">Sodio</label>
-                    <input
-                      type="text"
-                      id="Sodio"
-                      formControlName="sodium"
-                      class="form-control"
-                      placeholder="Sodio"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Fosforo">Fósforo</label>
-                    <input
-                      type="text"
-                      id="Fosforo"
-                      formControlName="phosphorus"
-                      class="form-control"
-                      placeholder="Fósforo"
-                    />
-                  </div>
+                <!-- Primer grupo de inputs -->
+                <div class="col-3">
+                  <label for="N_NH4">N-NH4</label>
+                  <input
+                    type="text"
+                    id="N_NH4"
+                    formControlName="nh4"
+                    class="form-control"
+                    placeholder="N-NH4"
+                  />
                 </div>
-                <div class="col">
-                  <div class="mb-3">
-                    <label for="Azufre">Azufre</label>
-                    <input
-                      type="text"
-                      id="Azufre"
-                      formControlName="sulfur"
-                      class="form-control"
-                      placeholder="Azufre"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Hierro">Hierro</label>
-                    <input
-                      type="text"
-                      id="Hierro"
-                      formControlName="iron"
-                      class="form-control"
-                      placeholder="Hierro"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Manganeso">Manganeso</label>
-                    <input
-                      type="text"
-                      id="Manganeso"
-                      formControlName="manganese"
-                      class="form-control"
-                      placeholder="Manganeso"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Cobre">Cobre</label>
-                    <input
-                      type="text"
-                      id="Cobre"
-                      formControlName="copper"
-                      class="form-control"
-                      placeholder="Cobre"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Zinc">Zinc</label>
-                    <input
-                      type="text"
-                      id="Zinc"
-                      formControlName="zinc"
-                      class="form-control"
-                      placeholder="Zinc"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Boro">Boro</label>
-                    <input
-                      type="text"
-                      id="Boro"
-                      formControlName="boron"
-                      class="form-control"
-                      placeholder="Boro"
-                    />
-                  </div>
+                <div class="col-3">
+                  <label for="N_NO3">N-NO3</label>
+                  <input
+                    type="text"
+                    id="N_NO3"
+                    formControlName="nh3"
+                    class="form-control"
+                    placeholder="N-NO3"
+                  />
                 </div>
-                <div class="col">
-                  <div class="mb-3">
-                    <label for="ph">pH</label>
-                    <input
-                      type="text"
-                      id="ph"
-                      formControlName="ph"
-                      class="form-control"
-                      placeholder="pH"
-                    />
-                  </div>
-                  <!-- <div class="mb-3">
-                    <label for="Conductividad">Conductividad</label>
-                    <input type="text" id="Conductividad" formControlName="Conductividad" class="form-control" placeholder="Conductividad">
-                  </div> -->
-                  <br /><br />
-                  <div class="mb-3">
-                    <label for="Arena">Arena</label>
-                    <input
-                      type="text"
-                      id="Arena"
-                      formControlName="sand"
-                      class="form-control"
-                      placeholder="Arena"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Limo">Limo</label>
-                    <input
-                      type="text"
-                      id="Limo"
-                      formControlName="silt"
-                      class="form-control"
-                      placeholder="Limo"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="Arcilla">Arcilla</label>
-                    <input
-                      type="text"
-                      id="Arcilla"
-                      formControlName="clay"
-                      class="form-control"
-                      placeholder="Arcilla"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="aluminum">aluminum</label>
-                    <input
-                      type="text"
-                      id="aluminum"
-                      formControlName="aluminum"
-                      class="form-control"
-                      placeholder="aluminum"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="profundidad_cm">Profundidad</label>
-                    <input
-                      type="text"
-                      id="profundidad_cm"
-                      formControlName="profundidad_cm"
-                      class="form-control"
-                      placeholder="profundidad cm"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="densidad_aparente">Densidad aparente</label>
-                    <input
-                      type="text"
-                      id="densidad_aparente"
-                      formControlName="densidad_aparente"
-                      class="form-control"
-                      placeholder="densidad aparente"
-                    />
-                  </div>
+                <div class="col-3">
+                  <label for="Potasio">Potasio</label>
+                  <input
+                    type="text"
+                    id="Potasio"
+                    formControlName="potassium"
+                    class="form-control"
+                    placeholder="Potasio"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Calcio">Calcio</label>
+                  <input
+                    type="text"
+                    id="Calcio"
+                    formControlName="calcium"
+                    class="form-control"
+                    placeholder="Calcio"
+                  />
+                </div>
+
+                <!-- Segundo grupo de inputs -->
+                <div class="col-3">
+                  <label for="Magnesio">Magnesio</label>
+                  <input
+                    type="text"
+                    id="Magnesio"
+                    formControlName="magnesium"
+                    class="form-control"
+                    placeholder="Magnesio"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Sodio">Sodio</label>
+                  <input
+                    type="text"
+                    id="Sodio"
+                    formControlName="sodium"
+                    class="form-control"
+                    placeholder="Sodio"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Fosforo">Fósforo</label>
+                  <input
+                    type="text"
+                    id="Fosforo"
+                    formControlName="phosphorus"
+                    class="form-control"
+                    placeholder="Fósforo"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Azufre">Azufre</label>
+                  <input
+                    type="text"
+                    id="Azufre"
+                    formControlName="sulfur"
+                    class="form-control"
+                    placeholder="Azufre"
+                  />
+                </div>
+
+                <!-- Tercer grupo de inputs -->
+                <div class="col-3">
+                  <label for="Hierro">Hierro</label>
+                  <input
+                    type="text"
+                    id="Hierro"
+                    formControlName="iron"
+                    class="form-control"
+                    placeholder="Hierro"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Manganeso">Manganeso</label>
+                  <input
+                    type="text"
+                    id="Manganeso"
+                    formControlName="manganese"
+                    class="form-control"
+                    placeholder="Manganeso"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Cobre">Cobre</label>
+                  <input
+                    type="text"
+                    id="Cobre"
+                    formControlName="copper"
+                    class="form-control"
+                    placeholder="Cobre"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Zinc">Zinc</label>
+                  <input
+                    type="text"
+                    id="Zinc"
+                    formControlName="zinc"
+                    class="form-control"
+                    placeholder="Zinc"
+                  />
+                </div>
+
+                <!-- Cuarto grupo de inputs -->
+                <div class="col-3">
+                  <label for="Boro">Boro</label>
+                  <input
+                    type="text"
+                    id="Boro"
+                    formControlName="boron"
+                    class="form-control"
+                    placeholder="Boro"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="ph">pH</label>
+                  <input
+                    type="text"
+                    id="ph"
+                    formControlName="ph"
+                    class="form-control"
+                    placeholder="pH"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Arena">Arena</label>
+                  <input
+                    type="text"
+                    id="Arena"
+                    formControlName="sand"
+                    class="form-control"
+                    placeholder="Arena"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="Limo">Limo</label>
+                  <input
+                    type="text"
+                    id="Limo"
+                    formControlName="silt"
+                    class="form-control"
+                    placeholder="Limo"
+                  />
+                </div>
+
+                <!-- Quinto grupo de inputs -->
+                <div class="col-3">
+                  <label for="Arcilla">Arcilla</label>
+                  <input
+                    type="text"
+                    id="Arcilla"
+                    formControlName="clay"
+                    class="form-control"
+                    placeholder="Arcilla"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="aluminum">Aluminio</label>
+                  <input
+                    type="text"
+                    id="aluminum"
+                    formControlName="aluminum"
+                    class="form-control"
+                    placeholder="Aluminio"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="profundidad_cm">Profundidad</label>
+                  <input
+                    type="text"
+                    id="profundidad_cm"
+                    formControlName="profundidad_cm"
+                    class="form-control"
+                    placeholder="Profundidad cm"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="densidad_aparente">Densidad Ap.</label>
+                  <input
+                    type="text"
+                    id="densidad_aparente"
+                    formControlName="densidad_aparente"
+                    class="form-control"
+                    placeholder="Densidad aparente"
+                  />
                 </div>
               </div>
             </div>
@@ -437,106 +435,60 @@
   </div>
 </div>
 
+
 <!-- ------------------------------------------------------------------------------- -->
 
-<div
-  class="modal"
-  id="myModal2"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="myModalLabel"
-  aria-hidden="true"
->
+<div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="container my-5">
-      <div class="card shadow-lg">
+      <div class="card shadow-lg custom-modal-content">
         <div class="card-header">
           <h5 class="titulo">Resultado de Análisis de Cultivo</h5>
         </div>
         <div class="card-body">
           <div *ngIf="responseData.comparacion_nutrientes">
-            <div
-              *ngFor="
-                let nutriente of [
-                  'Fósforo',
-                  'Azufre',
-                  'Calcio',
-                  'Cobre',
-                  'Hierro',
-                  'Magnesio',
-                  'Manganeso',
-                  'Potasio',
-                  'Zinc',
-                  'pH'
-                ]
-              "
-              class="mb-4"
-            >
-              <div class="card border-success mb-3">
-                <div class="card-body">
-                  <h5>{{ nutriente }}</h5>
-                  <p>
-                    <strong>Valor del análisis:</strong>
-                    {{
-                      responseData.comparacion_nutrientes[nutriente]
-                        ?.valor_analisis
-                    }}
-                  </p>
-                  <p>
-                    <strong>Valor mínimo:</strong>
-                    {{
-                      responseData.comparacion_nutrientes[nutriente]
-                        ?.valor_minimo
-                    }}
-                  </p>
-                  <p>
-                    <strong>Valor máximo:</strong>
-                    {{
-                      responseData.comparacion_nutrientes[nutriente]
-                        ?.valor_maximo
-                    }}
-                  </p>
-                  <div *ngIf="responseData.comparacion_nutrientes[nutriente]">
-                    <p
-                      *ngIf="
-                        responseData.comparacion_nutrientes[nutriente]
-                          .valor_analisis <
-                        responseData.comparacion_nutrientes[nutriente]
-                          .valor_minimo
-                      "
-                      class="text-warning"
-                    >
-                      Estado: Bajo - Recomendación: Aumentar niveles de
-                      {{ nutriente }}.
+            <!-- Contenedor de la cuadrícula -->
+            <div class="row">
+              <div
+                *ngFor="let nutriente of ['Fósforo', 'Azufre', 'Calcio', 'Cobre', 'Hierro', 'Magnesio', 'Manganeso', 'Potasio', 'Zinc', 'pH']"
+                class="col-lg-3 col-md-4 col-sm-6 mb-4"
+              >
+                <!-- Card -->
+                <div class="card border-success h-100">
+                  <div class="card-body">
+                    <h5 class="titulo"><b>{{ nutriente }}</b></h5>
+                    <p>
+                      <strong>Valor del análisis:</strong>
+                      {{ responseData.comparacion_nutrientes[nutriente]?.valor_analisis }}
                     </p>
-                    <p
-                      *ngIf="
-                        responseData.comparacion_nutrientes[nutriente]
-                          .valor_analisis >
-                        responseData.comparacion_nutrientes[nutriente]
-                          .valor_maximo
-                      "
-                      class="text-danger"
-                    >
-                      Estado: Alto - Recomendación: Reducir niveles de
-                      {{ nutriente }}.
+                    <p>
+                      <strong>Valor mínimo:</strong>
+                      {{ responseData.comparacion_nutrientes[nutriente]?.valor_minimo }}
                     </p>
-                    <p
-                      *ngIf="
-                        responseData.comparacion_nutrientes[nutriente]
-                          .valor_analisis >=
-                          responseData.comparacion_nutrientes[nutriente]
-                            .valor_minimo &&
-                        responseData.comparacion_nutrientes[nutriente]
-                          .valor_analisis <=
-                          responseData.comparacion_nutrientes[nutriente]
-                            .valor_maximo
-                      "
-                      class="text-success"
-                    >
-                      Estado: Óptimo - Recomendación: Los niveles de
-                      {{ nutriente }} son adecuados.
+                    <p>
+                      <strong>Valor máximo:</strong>
+                      {{ responseData.comparacion_nutrientes[nutriente]?.valor_maximo }}
                     </p>
+                    <div *ngIf="responseData.comparacion_nutrientes[nutriente]">
+                      <p
+                        *ngIf="responseData.comparacion_nutrientes[nutriente].valor_analisis < responseData.comparacion_nutrientes[nutriente].valor_minimo"
+                        class="text-warning"
+                      >
+                        Estado: Bajo - Recomendación: Aumentar niveles de {{ nutriente }}.
+                      </p>
+                      <p
+                        *ngIf="responseData.comparacion_nutrientes[nutriente].valor_analisis > responseData.comparacion_nutrientes[nutriente].valor_maximo"
+                        class="text-danger"
+                      >
+                        Estado: Alto - Recomendación: Reducir niveles de {{ nutriente }}.
+                      </p>
+                      <p
+                        *ngIf="responseData.comparacion_nutrientes[nutriente].valor_analisis >= responseData.comparacion_nutrientes[nutriente].valor_minimo && responseData.comparacion_nutrientes[nutriente].valor_analisis <= responseData.comparacion_nutrientes[nutriente].valor_maximo"
+                        class="text-success"
+                      >
+                        Estado: Óptimo - Recomendación: Los niveles de {{ nutriente }} son adecuados.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -551,18 +503,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btnj"
-            style="background-color: #333; color: #fff"
-            data-dismiss="modal"
-          >
-            Cerrar
-          </button>
+          <div class="modal-footer">
+            <button type="button" class="btn btnk close-btn" data-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+

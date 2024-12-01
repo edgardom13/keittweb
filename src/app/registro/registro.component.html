@@ -1,0 +1,98 @@
+<!-- Login Component - Bootstrap -->
+<section class="bg-dark py-3 py-md-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+          <div class="card border border-light-subtle rounded-3 shadow-sm">
+            <div class="card-body p-3 p-md-4 p-xl-5">
+              <div class="text-center mb-3">
+                <img src="dist/img/icono.png" alt="Logo" width="150" height="130" />
+              </div>
+              <h2 class="fs-6 fw-normal text-center text-secondary mb-4">
+                Iniciar sesión en su cuenta
+              </h2>
+              <form [formGroup]="registroForm" (ngSubmit)="registro()">
+                <div class="row gy-3">
+                    <!-- alias-->
+                    <div class="col-12">
+                        <div class="form-floating">
+                          <input 
+                            type="text"
+                            formControlName="username"
+                            class="form-control" 
+                            id="username" 
+                            placeholder="Alias"
+                            required />
+                          <label for="username">Alias</label>
+                        </div>
+                      </div>
+                      
+                   <!-- Email -->
+                   <div class="col-12">
+                    <div class="form-floating">
+                      <input 
+                        type="email"
+                        formControlName="email"
+                        class="form-control" 
+                        id="email" 
+                        placeholder="Email"
+                        required />
+                      <label for="email">Email</label>
+                    </div>
+                  </div>  
+  
+                  <!-- Contraseña -->
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input 
+                        type="password"
+                        formControlName="password"
+                        class="form-control" 
+                        id="password" 
+                        placeholder="Contraseña"
+                        required />
+                      <label for="password">Contraseña</label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input 
+                        type="password"
+                        formControlName="repassword"
+                        class="form-control" 
+                        id="repassword" 
+                        placeholder="Contraseña Nuevamente"
+                        required />
+                      <label for="repassword">Contraseña Nuevamente</label>
+                    </div>
+                  </div>
+  
+                 
+             
+                  <div class="col-12">
+                    <div class="d-grid my-3">
+                      <button 
+                        class="btn btn-success btn-lg"
+                        type="submit"
+                        [disabled]="registroForm.invalid">
+                        Registro
+                      </button>
+                    </div>
+                  </div>                  
+                </div>
+              </form>
+              <div class="col-12">
+                <div class="d-flex justify-content-between">
+                  <a [routerLink]="['/login']" class="link-primary text-decoration-none">
+                    ¿Iniciar sesión?
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
