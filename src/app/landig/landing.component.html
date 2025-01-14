@@ -1,34 +1,42 @@
-  <header id="header" class="header d-flex align-items-center fixed-top container-fluid">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img id="foto" src="dist/img/icono.png" alt="foto" class="brand-image" />
-        <span class="brand-text font-weight-light" style="font-size: 25px;">
-          <b class="fuerte">Keitt</b>
-          <b style="color: #ed9124; font-weight: bold;">Web</b>
-        </span>
-        <span class="brand-text font-weight-light sub">
-          <b>Guía metodológica</b>
-        </span>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#about">Acerca de </a></li>
-          <li><a href="#pricing">precio</a></li>
-          <li><a href="#testimonio">Testimonio</a></li>
-          <li><a href="#">Ayuda</a></li>
-          <li><a [routerLink]="['/login']">Iniciar sesión</a></li>
-          <li><a [routerLink]="['/registro']">Registrate</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <img id="foto" src="dist/img/icono.png" alt="foto" class="brand-image" width="100" height="100" />
+      <span class="brand-text font-weight-light" style="font-size: 25px;">
+        <b class="fuerte">Keitt</b>
+        <b style="color: #ed9124; font-weight: bold;">Web</b>
+      </span>
+      <span class="brand-text font-weight-light sub">
+        <b>Guía metodológica</b>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Precio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#developers">Desarrolladores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ayuda">Ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Iniciar sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/registro">Registrate</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </div>
+</nav>
 
   <main class="main">
 
@@ -185,58 +193,81 @@
     </section><!-- /Pricing Section -->
 
         <!-- Values Section -->
-        <section id="testimonio" class="values section" style="margin-top:-250px;">
+        <section id="developers" class="values section" style="margin-top:-250px;">
 
           <!-- Section Title -->
           <div class="container section-title" >
-            <p>Testimonios<br></p>
+            <p>Developers<br></p>
           </div><!-- End Section Title -->
     
           <div class="container">
-    
-            <div class="row gy-4">
-    
-              <div class="col-lg-4" >
-                <div class="card">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid" alt="">
-                  <h3>Viezh Robert</h3>
-                  <p>4.5 ⭐</p>
-                  <p>Es una página muy buena, rápida y eficiente.</p>
-                </div>
-              </div><!-- End Card Item -->
 
-              <div class="col-lg-4" >
-                <div class="card">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid" alt="">
-                  <h3>Yessica Christy</h3>
-                  <p>4.5 ⭐</p>
-                  <p>¡Genial!, me ha encantado, y lo mejor es que es gratis.</p>
-                </div>
-              </div><!-- End Card Item -->
-
-              <div class="col-lg-4" >
-                <div class="card">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="img-fluid" alt="">
-                  <h3>Joe Doe</h3>
-                  <p>4.5 ⭐</p>
-                  <p>Wow, es increíble, muy interactiva y
-                    profesional.</p>
-                </div>
-              </div><!-- End Card Item -->
-    
-             
-    
+            <div class="slider">
+              <input type="radio" name="testimonial" id="t-1">
+              <input type="radio" name="testimonial" id="t-2">
+              <input type="radio" name="testimonial" id="t-3" checked>
+              <input type="radio" name="testimonial" id="t-4">
+              <input type="radio" name="testimonial" id="t-5">
+              <input type="radio" name="testimonial" id="t-6">
+              <input type="radio" name="testimonial" id="t-7">
+              <div class="testimonials">
+                <label class="item" for="t-7">
+                  <img src="dist/img/dayana.png" alt="picture">
+                  <p>Dayana fonseca </p>
+                  <h2>Contrato de aprendizaje </h2>
+                </label>
+                <label class="item" for="t-1">
+                  <img src="dist/img/gixeica.png" alt="picture">
+                  <p>Gixeika Andrea Vega Diaz </p>
+                  <h2>Monitoria </h2>
+                </label>
+                <label class="item" for="t-2">
+                  <img src="dist/img/jhonatan.png" alt="picture">
+                  <p>Jhonatan Samuel Velasco Dangond  </p>
+                  <h2>Monitoria</h2>
+                </label>
+                <label class="item" for="t-3">
+                  <img src="dist/img/julian.jpeg" alt="picture">
+                  <p>Julián Ernesto Trespalacios Torres   
+                  </p>
+                  <h2>Instructor Investigador</h2>
+                </label>
+                <label class="item" for="t-4">
+                  <img src="dist/img/angel.jpeg" alt="picture">
+                  <p> Ángel David Vásquez Pedrozo </p>
+                  <h2>Contrato de aprendizaje</h2>
+                </label>
+                <label class="item" for="t-5">
+                  <img src="dist/img/edgardo.png" alt="picture">
+                  <p>Edgardo José Montaño Araque </p>
+                  <h2>Investigador Junior </h2>
+                </label>
+                <label class="item" for="t-6">
+                  <img src="dist/img/jesus.jpeg" alt="picture">
+                  <p>Jesús David Aguilar López </p>
+                  <h2>Semillero de investigación </h2>
+                </label>
+              </div>
+              <div class="dots">
+                <label for="t-1"></label>
+                <label for="t-2"></label>
+                <label for="t-3"></label>
+                <label for="t-4"></label>
+                <label for="t-5"></label>
+                <label for="t-6"></label>
+                <label for="t-7"></label>
+              </div>
             </div>
+           
     
           </div>
     
         </section><!-- /Values Section -->
-
   </main>
 
   <footer id="footer" class="footer">
 
-    <div class="footer-newsletter">
+    <div class="footer-newsletter" id="ayuda">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-6">

@@ -47,7 +47,7 @@ export const routes: Routes = [
             { path: 'siembra', title: 'Siembra', component: SiembraComponent },
             { path: 'cultivo', title: 'Cultivo', component: CultivoComponent },
             { path: 'riego', title: 'Riego', component: RiegoComponent },
-            { path: 'plagas', title: 'Plagas', component: PlagasComponent },
+            // { path: 'plagas', title: 'Plagas', component: PlagasComponent },
         ]
     }
 ];

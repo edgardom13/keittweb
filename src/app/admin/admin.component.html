@@ -159,7 +159,7 @@
                 </p>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item disabled">
               <a [routerLink]="['/admin/plagas']" class="nav-link">
                 <i class="nav-icon fa fa-bug"></i>
                 <p>
@@ -203,6 +203,18 @@
             <hr>
             <li class="nav-header">Otros</li>
             <li class="nav-item">
+              <a (click)="loadPDF" class="nav-link" data-bs-toggle="modal" data-bs-target="#openpdf" >
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                <p>Manual de usuario</p>         
+              </a>
+            </li>
+            <li class="nav-item">
+              <a (click)="loadPDF2" class="nav-link" data-bs-toggle="modal" data-bs-target="#openpdf2">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <p> Documentacion </p>         
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" (click)="logout()">
                   <i class="nav-icon fa fa-sign-in"></i>
                     <p> Salir </p>         
@@ -230,3 +242,42 @@
       </div>
     </footer>
   </div>
+
+
+ 
+
+
+<!-- Modal -->
+<div class="modal fade" id="openpdf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Manual de usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <iframe *ngIf="pdfUrl" class="w-full h-screen rounded-lg" height="500" [src]="pdfUrl" width="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="openpdf2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Docuemntación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <iframe *ngIf="pdfUrl2" class="w-full h-screen rounded-lg" height="500" [src]="pdfUrl2" width="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
